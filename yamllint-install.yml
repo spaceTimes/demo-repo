@@ -1,0 +1,10 @@
+---
+- name: Install yamllint
+  hosts: linux
+  become: true
+  tasks:
+    - name: Install yamllint
+      apt:
+        name: yamllint
+        state: latest
+
